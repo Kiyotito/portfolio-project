@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import HireMeBar from './components/HireMeBar';
+import Hero from './components/Hero';
 
 function App() {
   return (
    <div>
-    <h1>My Portfolio Project!</h1>
+    <HireMeBar/>
+    <Hero/> 
    </div>
+   
   );
 }
 
