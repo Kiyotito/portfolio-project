@@ -1,15 +1,39 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
+
 
 const Hero = () => {
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseOver = () => {
+        setIsHovering(true);
+      };
+    
+      const handleMouseOut = () => {
+        setIsHovering(false);
+      };
 
     return (
     <MainDiv>
     <InfoDiv>
     <MyImage src="/assets/KoichiSatoPicture.png"/>
     <div>
-     <Name>Koichi Sato</Name>
-     <OtherTextInfo>Aspiring Web Developper</OtherTextInfo>   
+    <div
+    onMouseOver={handleMouseOver}
+    onMouseOut={handleMouseOut}
+   
+    >
+
+    <NameQuestion>My name is:
+    <HereText>*HOVER*</HereText>
+    <Name>Koichi Sato</Name>  
+    </NameQuestion> 
+    
+    
+    
+    </div> 
+     <OtherTextInfo>Web Development Student</OtherTextInfo>   
      <OtherTextInfo>Human Bug Spray</OtherTextInfo>     
     </div>
     </InfoDiv>
@@ -33,9 +57,32 @@ const MyImage = styled.img`
 width: 500px;
 `
 
-const Name = styled.h1`
+const NameQuestion = styled.h1`
 margin: 10px 10px;
+display: flex;
+flex-direction: column;
+`
+
+const Name = styled.h1`
+margin: 0px 10px;
+font-size: 0px;
+transition: all 0.25s ease-in-out;
+opacity: 0;
+${NameQuestion}:hover &{
+  font-size: 75px;
+  opacity: 1;
+}
 `
 const OtherTextInfo = styled.h2`
 margin: 10px 10px;
+`
+
+const HereText = styled.span`
+font-size: 10px;
+margin-top: 10px;
+transition: all 0.25s ease-in-out;
+${NameQuestion}:hover &{
+  margin-top: 0px;
+opacity: 0;
+}
 `
