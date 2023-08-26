@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import NavigationCircleBar from "./NavigationCircleBar";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
-
+import Contact from "./Contact";
 const MainPage = () => {
 
     return(
@@ -13,6 +13,7 @@ const MainPage = () => {
     <Hero/> 
     <AboutMe/>
     <Project/>
+    <Contact/>
     </>
     )
 }

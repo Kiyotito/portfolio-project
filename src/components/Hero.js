@@ -64,11 +64,12 @@ flex-direction: column;
 `
 
 const Name = styled.h1`
-margin: 0px 10px;
+margin: 5px 10px;
 font-size: 0px;
 transition: all 0.25s ease-in-out;
 opacity: 0;
 ${NameQuestion}:hover &{
+  margin-top: -10px;
   font-size: 75px;
   opacity: 1;
 }

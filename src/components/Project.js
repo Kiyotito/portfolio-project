@@ -9,7 +9,8 @@ const Project = () => {
     <MainProjectDiv>
         <ProjectTitle>Things I Made 🔧</ProjectTitle>
         <ProjectDiv>
-            <ProjectName>⚙️ Project</ProjectName>
+            <ProjectName>⚙️ Menu Project</ProjectName>
+            <MyImage src="/assets/MenuProject.png"/>
         </ProjectDiv>
     </MainProjectDiv>
     </>    
@@ -29,12 +30,14 @@ align-items: center;
 `
 const ProjectDiv = styled.div`
 border-radius: 50px;
-border: 1px solid black;
 width: 95vw;
 margin: 25px 0px;
-height: 200px;
 text-align: center;
 background-color: lightgray;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
 `
 
 const ProjectTitle = styled.h1`
@@ -43,4 +46,10 @@ padding-top: 25px;
 
 const ProjectName= styled.h2`
 padding-top: 25px;
+`
+const MyImage = styled.img`
+margin-top: 20px;
+width: 60vw;
+border-radius: 50px;
+border: 1px solid black;
 `
