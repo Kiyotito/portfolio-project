@@ -4,7 +4,7 @@ import styled from "styled-components";
 const AboutMe = () => {
 
     return(
-    <>
+    <MainDiv>
     <AboutMeDiv>
     <h1>I Yam What I Yam 🍠</h1>
     </AboutMeDiv>    
@@ -36,11 +36,15 @@ const AboutMe = () => {
     </SoftStackList>
     </PurpleDiv>
     </StatementDiv>
-    </>
+    </MainDiv>
     )
 }
 
 export default AboutMe;
+
+
+const MainDiv = styled.div`
+`
 
 const AboutMeDiv = styled.div`
 display: flex;
@@ -50,9 +54,13 @@ background-color: #FDB750;
 padding: 25px 0px;
 margin: 100px 10px 0px 10px;
 border-radius: 50px;
+@media (max-width: 750px){
+margin: 50px 10px 10px 10px;
+}
 `
 
 const GreyDiv = styled.div`
+display: flex;
 background-color: #C0C0C0;
 margin: 20px 20px 20px 10px;
 border-radius: 50px;
@@ -61,7 +69,13 @@ height: 10vh;
 font-size: 20px;
 text-align: center;
 height: 100px;
-padding: 20px;
+justify-content: center;
+align-items: center;
+padding: 0px 5px;
+@media (max-width: 750px){
+width: 96vw;
+margin: 2vw;
+}
 `
 const PinkDiv = styled.div`
 margin: 20px 10px 20px 0px;
@@ -72,17 +86,28 @@ font-size: 20px;
 height: 100px;
 padding: 20px;
 text-align: center;
+@media (max-width: 750px){
+width: 96vw;
+margin: 2vw;
+}
 `
 const StatementDiv = styled.div`
 display: flex;
+@media (max-width: 750px){
+display: block;
+}
 `
 
 const GreenDiv = styled.div`
 background-color: #7FFFD4;
 border-radius: 50px;
-margin: 0px 10px 0px 10px;
+margin: 0px 10px;
 width: 60vw;
 height: 150px;
+@media (max-width: 750px){
+width: 96vw;
+margin: 2vw;
+}
 `
 
 const TechStackList = styled.ul`
@@ -102,6 +127,10 @@ border-radius: 50px;
 margin: 0px 10px 0px 10px;
 width: 40vw;
 height: 150px;
+@media (max-width: 750px){
+width: 96vw;
+margin: 2vw;
+}
 `
 
 const SoftStackList = styled.ul`

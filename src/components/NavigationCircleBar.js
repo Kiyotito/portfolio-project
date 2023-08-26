@@ -31,6 +31,12 @@ export default NavigationCircleBar;
 const NavBarDiv = styled.nav`
 display: flex;
 justify-content: flex-end;
+margin-top: 10px;
+@media (max-width: 750px){
+margin-top: 20px;
+display: flex;
+justify-content: center;
+}
 
 `
 const NavPicture = styled.img`

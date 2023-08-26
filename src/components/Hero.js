@@ -51,6 +51,10 @@ justify-content: center;
 const InfoDiv = styled.div`
 display: flex;
 align-items: center;
+@media (max-width: 750px){
+display: flex;
+flex-direction: column;
+}
 `
 
 const MyImage = styled.img`
@@ -73,6 +77,12 @@ ${NameQuestion}:hover &{
   font-size: 75px;
   opacity: 1;
 }
+@media (max-width: 750px){
+  margin-top: -10px;
+  margin-left: 0px;
+  font-size: 75px;
+  opacity: 1;
+}
 `
 const OtherTextInfo = styled.h2`
 margin: 10px 10px;
@@ -84,6 +94,10 @@ margin-top: 10px;
 transition: all 0.25s ease-in-out;
 ${NameQuestion}:hover &{
   margin-top: 0px;
+opacity: 0;
+}
+@media (max-width: 750px){
+margin-top: 0px;
 opacity: 0;
 }
 `

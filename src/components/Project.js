@@ -27,6 +27,10 @@ margin: 20px 10px 0px 10px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+@media (max-width: 750px){
+width: 96vw;
+margin: 2vw;
+}
 `
 const ProjectDiv = styled.div`
 border-radius: 50px;
@@ -38,6 +42,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding-bottom: 20px;
+@media (max-width: 750px){
+width: 90vw;
+margin-top: 25px;
+margin-right: 5vw;
+margin-left: 5vw;
+}
 `
 
 const ProjectTitle = styled.h1`
