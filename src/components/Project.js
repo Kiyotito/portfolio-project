@@ -11,7 +11,13 @@ const Project = () => {
         <ProjectDiv>
             <ProjectName>⚙️ Menu Project</ProjectName>
             <MyImage src="/assets/MenuProject.png"/>
+        <Description>Are you hungry? 
+         <br/>
+         Check out this delicious restaurant's menu!   
+        </Description>
+        
         </ProjectDiv>
+        
     </MainProjectDiv>
     </>    
     )
@@ -19,6 +25,9 @@ const Project = () => {
  
 export default Project;
 
+const Description = styled.span`
+margin:25px;
+`
 const MainProjectDiv = styled.div`
 display: flex;
 border-radius: 50px;
@@ -27,6 +36,7 @@ margin: 20px 10px 0px 10px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding-bottom: 5vh;
 @media (max-width: 750px){
 width: 96vw;
 margin: 2vw;
@@ -35,7 +45,7 @@ margin: 2vw;
 const ProjectDiv = styled.div`
 border-radius: 50px;
 width: 95vw;
-margin: 25px 0px;
+margin: 25px;
 text-align: center;
 background-color: lightgray;
 display: flex;
