@@ -14,9 +14,8 @@ const AboutMe = () => {
     <span>Building problem solving solutions with ❤️</span>
     </GreyDiv>
     <PinkDiv>
-    🧂<em> Seasoned Professional:</em> 
-    <br/>
-    <span>Much like tofu, I have both hard and soft skills</span>
+    <Div><div>🧂<em> Seasoned Professional:</em></div> 
+    <span>Much like tofu, I have both hard and soft skills</span></Div>
     </PinkDiv>
     </StatementDiv>
     <StatementDiv>
@@ -44,6 +43,11 @@ const AboutMe = () => {
 
 export default AboutMe;
 
+const Div = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
 
 const MainDiv = styled.div`
 `
@@ -53,7 +57,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #FDB750;
-padding: 25px 0px;
+padding: 20px;
 margin: 100px 10px 0px 10px;
 border-radius: 50px;
 @media (max-width: 750px){
@@ -86,11 +90,12 @@ border-radius: 50px;
 width: 60vw;
 font-size: 20px;
 height: 100px;
-padding: 20px;
+padding:20px;
 text-align: center;
 @media (max-width: 750px){
 width: 96vw;
 margin: 2vw;
+padding:10px 0px;
 }
 `
 const StatementDiv = styled.div`
