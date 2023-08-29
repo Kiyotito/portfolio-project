@@ -9,17 +9,17 @@ const NavigationCircleBar = () => {
 
     return(
     <NavBarDiv>
-    <ALink smooth to={"/#aboutme"}>
+    <ALink smooth="true" to={"/#aboutme"}>
     <DivCircle>
        <span>About Me</span>
     </DivCircle>
     </ALink>
-    <ALink smooth to={"/#project"}>
+    <ALink smooth="true" to={"/#project"}>
     <DivCircle>
     <span> Project</span>
     </DivCircle>
     </ALink>
-    <ALink smooth to={"/#contact"}>
+    <ALink smooth="true" to={"/#contact"}>
     <DivCircle>
     <span> Contact</span>
     </DivCircle>
