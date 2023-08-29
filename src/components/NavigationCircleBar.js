@@ -1,23 +1,25 @@
 import React from "react"; 
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hashlink";
+
 
 
 const NavigationCircleBar = () => {
 
     return(
     <NavBarDiv>
-    <ALink to="/AboutMe">
+    <ALink smooth to={"/#aboutme"}>
     <DivCircle>
        <span>About Me</span>
     </DivCircle>
     </ALink>
-    <ALink to="/Project">
+    <ALink smooth to={"/#project"}>
     <DivCircle>
     <span> Project</span>
     </DivCircle>
     </ALink>
-    <ALink to="/Contact">
+    <ALink smooth to={"/#contact"}>
     <DivCircle>
     <span> Contact</span>
     </DivCircle>
@@ -59,6 +61,6 @@ transition-duration: 250ms;
 background-color: orange ;
 }
 `
-const ALink = styled(Link)`
+const ALink = styled(HashLink)`
 text-decoration: none;
 `

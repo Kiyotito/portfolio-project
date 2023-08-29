@@ -9,11 +9,20 @@ const MainPage = () => {
 
     return(
     <>
+
     <NavigationCircleBar/>
-    <Hero/> 
+    <div id="hero">
+    <Hero/>
+    </div> 
+    <div id="aboutme">
     <AboutMe/>
+    </div>
+    <div id="project">
     <Project/>
+    </div>
+    <div id="contact">
     <Contact/>
+    </div>
     </>
     )
 }

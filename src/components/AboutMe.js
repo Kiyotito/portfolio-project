@@ -13,7 +13,7 @@ const AboutMe = () => {
     <span>Building problem solving solutions with ❤️</span>
     </GreyDiv>
     <PinkDiv>
-    <em>Seasoned Professional:</em>
+    🧂<em> Seasoned Professional:</em> 
     <br/>
     <span>Much like tofu, I have both hard and soft skills</span>
     </PinkDiv>
@@ -31,7 +31,7 @@ const AboutMe = () => {
     <SoftStackTitle>Soft Stack</SoftStackTitle>
     <SoftStackList>
         <li>Communication</li>
-        <li>Education</li>
+        <li>Project Management</li>
         <li>Leadership</li>
     </SoftStackList>
     </PurpleDiv>
