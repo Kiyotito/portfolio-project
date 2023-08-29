@@ -15,6 +15,7 @@ const Hero = () => {
       };
 
     return (
+    <>
     <MainDiv>
     <InfoDiv>
     <MyImage src="/assets/KoichiSatoPicture.png"/>
@@ -37,7 +38,8 @@ const Hero = () => {
      <OtherTextInfo>Human Bug Spray</OtherTextInfo>     
     </div>
     </InfoDiv>
-    </MainDiv>    
+    </MainDiv>  
+    </>  
     )
 }
 

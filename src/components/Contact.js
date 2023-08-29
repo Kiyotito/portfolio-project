@@ -5,6 +5,7 @@ const Contact = () => {
     const lengthOfWindow = window.innerWidth;
     const numberOfCircle = Math.floor(lengthOfWindow/25);
     return (
+    <>
     <ContactBanner>
     <Header>📞 Ring-A-Ding</Header>
     <Circle>514-578-2921</Circle>
@@ -22,7 +23,8 @@ const Contact = () => {
     <TextArea type="textarea" id="textarea"/>   
     <Button type="submit" value="Send"/>      
     </Form></Rectangle>
-    </ContactBanner>    
+    </ContactBanner>  
+    </>  
     )
 }
 

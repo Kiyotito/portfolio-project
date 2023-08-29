@@ -4,6 +4,7 @@ import styled from "styled-components";
 const AboutMe = () => {
 
     return(
+    <>
     <MainDiv>
     <AboutMeDiv>
     <h1>I Yam What I Yam 🍠</h1>
@@ -37,6 +38,7 @@ const AboutMe = () => {
     </PurpleDiv>
     </StatementDiv>
     </MainDiv>
+    </>
     )
 }
 

@@ -9,7 +9,6 @@ const MainPage = () => {
 
     return(
     <>
-
     <NavigationCircleBar/>
     <div id="hero">
     <Hero/>

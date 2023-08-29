@@ -8,6 +8,7 @@ import { HashLink } from "react-router-hashlink";
 const NavigationCircleBar = () => {
 
     return(
+    <>
     <NavBarDiv>
     <ALink smooth="true" to={"/#aboutme"}>
     <DivCircle>
@@ -25,6 +26,7 @@ const NavigationCircleBar = () => {
     </DivCircle>
     </ALink>
     </NavBarDiv>    
+    </>
     )
 }
 
