@@ -12,7 +12,7 @@ const NavigationCircleBar = () => {
     <NavBarDiv>
     <ALink smooth="true" to={"/#aboutme"}>
     <DivCircle>
-       <span>About Me</span>
+    <span>About Me</span>
     </DivCircle>
     </ALink>
     <ALink smooth="true" to={"/#project"}>

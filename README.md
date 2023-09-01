@@ -1,3 +1,16 @@
+Goals: 
+1: Showcase technical capibilities: 
+    a - Each aspect of the website is its own componenet
+    b - Included some animation (hover states)
+    c - Made portfolio website mobile responsive
+    d - Included Hashlink in order to facilitate navigation
+    e - 1 main scrollable portfolio 
+2: Leverage previous professional experience / skill set (soft skills)
+    a - Creative approach to title and descriptions
+    b - Added humour in order to showcase approachable personality
+    c - Included "Soft Stack" 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
